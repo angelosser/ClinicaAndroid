@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".FormularioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:text="Cuestionario COVID-19"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Marca tus Sintomas" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chxDisminucion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disminucion del gusto o del olfato" />
+
+                <CheckBox
+                    android:id="@+id/chxTos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tos" />
+
+                <CheckBox
+                    android:id="@+id/chxDolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dolor de Garganta" />
+
+                <CheckBox
+                    android:id="@+id/chxCongestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Congestion Nasal" />
+
+                <CheckBox
+                    android:id="@+id/chxFiebre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fiebre" />
+
+                <CheckBox
+                    android:id="@+id/chxNinguno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ninguno" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2. Tienes fiebre mayor a 37 grados?" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroupGrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnSiFiebre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rbtnNoFiebre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3. Vives solo en casa?" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroupVive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnSiCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rbtnNoCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4. Vives con un adulto mayor en casa?" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroupAdulto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnSiAdulto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/rbtnNoAdulto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="5. Cuentas con los siguientes servicios en casa?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chxLuz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luz" />
+
+                <CheckBox
+                    android:id="@+id/chxAgua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agua" />
+
+                <CheckBox
+                    android:id="@+id/chxInternet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Internet" />
+
+                <CheckBox
+                    android:id="@+id/chxCable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cable" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnResolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resolver" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
